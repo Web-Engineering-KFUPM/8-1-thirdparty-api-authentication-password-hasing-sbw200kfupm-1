@@ -243,15 +243,6 @@ app.get("/", (_req, res) => {
 // =========================
 // POST /register
 // // =========================
-
-app.post("/register", async (req, res) => {
-  // Implement logic here based on the TODO 1.
-  const {em}
-});
-
-// =========================
-// POST /login
-// =========================
 app.post("/register", async (req, res) => {
   try {
     const { email, password } = req.body || {};
@@ -273,6 +264,13 @@ app.post("/register", async (req, res) => {
     console.error("Register error:", err);
     return res.status(500).json({ error: "Server error during register" });
   }
+});
+
+// =========================
+// POST /login
+// =========================
+app.post("/login", async (req, res) => {
+  // Implement logic here based on the TODO 2.
 });
 
 // =========================
