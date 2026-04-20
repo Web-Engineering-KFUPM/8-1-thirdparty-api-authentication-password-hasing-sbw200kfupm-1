@@ -242,9 +242,11 @@ app.get("/", (_req, res) => {
 
 // =========================
 // POST /register
-// =========================
+// // =========================
+
 app.post("/register", async (req, res) => {
   // Implement logic here based on the TODO 1.
+  
 });
 
 // =========================
